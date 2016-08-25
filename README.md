@@ -14,6 +14,23 @@ https://git.oschina.net/surenpi/autotest.web.framework.demo
 
 环境：
 JDK1.7，Maven
+本项目采用Maven进行管理，使用的话，需要在您的工程pom.xml文件中添加以下信息：
+<code xml>
+<repositories>
+	<repository>
+		<id>autotest.web.framework.surenpi.com</id>
+		<url>http://maven.surenpi.com/nexus/content/repositories</url>
+	</repository>
+</repositories>
+
+<dependencies>
+	<dependency>
+		<groupId>org.suren.autotest</groupId>
+		<artifactId>autotest.web.framework</artifactId>
+		<version>0.0.2-SNAPSHOT</version>
+	</dependency>
+</dependencies>
+</code>
 
 更多详细内容请访问下面的博客：
 http://surenpi.com/2016/07/18/autotest_web_framework_base_selenium/
