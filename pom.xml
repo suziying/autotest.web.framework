@@ -11,6 +11,13 @@
 		<plugins>
 		</plugins>
 	</build>
+	
+	<repositories>
+		<repository>
+			<id>autotest.web.framework.surenpi.com</id>
+			<url>http://maven.surenpi.com/nexus/content/repositories</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
 		<dependency>
