@@ -3,6 +3,8 @@
 - 支持多种数据源
 - 支持操作日志生成GIF动态图片
 - 自带Windows版本的driver驱动
+- 支持python
+- 支持Eclipse插件生成代码
 
 本项目在码云和Github上都有托管，下面是各自的地址：
 Github  https://github.com/LinuxSuRen/autotest.web.framework
