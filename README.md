@@ -13,12 +13,16 @@ Github  https://github.com/LinuxSuRen/autotest.web.framework
 从附件中下载到示例工程后，可以直接运行看到效果。
 示例工程的源码如下：
 https://git.oschina.net/surenpi/autotest.web.framework.demo
--
+
 环境：
 JDK1.7，Maven
 
 更多详细内容请访问下面的博客：
 http://surenpi.com/2016/07/18/autotest_web_framework_base_selenium/
+
+和本项目配套的Maven骨架工程源码位置如下：
+Github  https://github.com/LinuxSuRen/autotest.web.framework.archetype
+码云    http://git.oschina.net/surenpi/autotest.web.framework.archetype
 
 备注：
 由于本项目没有提交任何工程、IDE相关的文件（这样，您就可以任选Eclipse、IntelliJ IDEA或者是NetBeans作为您的开发工具了），所以check出来以后还需要一些步骤。
