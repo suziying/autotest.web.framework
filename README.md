@@ -28,4 +28,6 @@ Github  https://github.com/LinuxSuRen/autotest.web.framework.archetype
 由于本项目没有提交任何工程、IDE相关的文件（这样，您就可以任选Eclipse、IntelliJ IDEA或者是NetBeans作为您的开发工具了），所以check出来以后还需要一些步骤。
 这里给出在Eclipse中使用Maven的教程。
 
+在线团队协作https://team.oschina.net/surenpi
+
 QQ群：52492046
