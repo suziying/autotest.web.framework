@@ -24,6 +24,10 @@ http://surenpi.com/2016/07/18/autotest_web_framework_base_selenium/
 Github  https://github.com/LinuxSuRen/autotest.web.framework.archetype
 码云    http://git.oschina.net/surenpi/autotest.web.framework.archetype
 
+和本项目配套的Eclipse插件工程源码位置如下：
+Github  https://github.com/LinuxSuRen/autotest.web.framework.plugin
+码云    http://git.oschina.net/surenpi/autotest.web.framework.plugin
+
 备注：
 由于本项目没有提交任何工程、IDE相关的文件（这样，您就可以任选Eclipse、IntelliJ IDEA或者是NetBeans作为您的开发工具了），所以check出来以后还需要一些步骤。
 这里给出在Eclipse中使用Maven的教程。
