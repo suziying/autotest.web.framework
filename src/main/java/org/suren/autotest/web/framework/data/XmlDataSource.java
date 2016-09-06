@@ -44,15 +44,21 @@ public class XmlDataSource implements DataSource
 	public boolean loadData(DataResource resource, Page page)
 	{
 		this.page = page;
-		URL url = resource.getUrl();
+		URL url = null;
+		try {
+			url = resource.getUrl();
+		} catch (IOException e) {
+			LOGGER.error(e.getMessage(), e);
+		}
+		
 		if(url == null)
 		{
 			return false;
 		}
 		
-		try(InputStream inputStream = url.openStream())
+		try(InputStream inputStream = url.openStream()) //打开文件流
 		{
-			parse(inputStream);
+			parse(inputStream); //解析xml数据源文件
 		}
 		catch (IOException | DocumentException e)
 		{
@@ -63,6 +69,7 @@ public class XmlDataSource implements DataSource
 	}
 
 	/**
+	 * 解析xml文档
 	 * @param inputStream
 	 * @throws DocumentException 
 	 */
@@ -73,6 +80,10 @@ public class XmlDataSource implements DataSource
 		parse(document);
 	}
 	
+	/**
+	 * 解析docment对象
+	 * @param doc
+	 */
 	private void parse(Document doc)
 	{
 		String pageClass = page.getClass().getName();

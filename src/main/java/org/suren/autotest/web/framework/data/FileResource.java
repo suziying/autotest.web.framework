@@ -3,22 +3,28 @@
  */
 package org.suren.autotest.web.framework.data;
 
+import java.io.File;
+import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
+ * 文件类型的资源
  * @author suren
  * @date Jul 17, 2016 8:49:18 AM
  */
 public class FileResource implements DataResource
 {
-
-	/* (non-Javadoc)
-	 * @see org.suren.autotest.web.framework.data.DataResource#getUrl()
-	 */
-	public URL getUrl()
+	private File file;
+	
+	public FileResource(File file)
 	{
-		// TODO Auto-generated method stub
-		return null;
+		this.file = file;
+	}
+
+	@Override
+	public URL getUrl() throws MalformedURLException
+	{
+		return file.toURI().toURL();
 	}
 
 }
