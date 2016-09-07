@@ -6,6 +6,8 @@
 - 支持python
 - 支持Eclipse插件生成代码
 
+在线的API文档地址http://surenpi.oschina.io/autotest.web.framework.api/
+
 本项目在码云和Github上都有托管，下面是各自的地址：
 Github  https://github.com/LinuxSuRen/autotest.web.framework
 码云    https://git.oschina.net/surenpi/autotest.web.framework
