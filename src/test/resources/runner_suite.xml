@@ -4,7 +4,7 @@
 	<page class="org.suren.test.Page">
 		<actions beforeSleep="3" afterSleep="3">
 			<action field="userName" name="fillValue"></action>
-			<action field="loginBut" name="click"></action>
+			<action field="loginBut"></action>
 			<action field="attachPic" name="upload" beforeSleep="3" afterSleep="3"></action>
 		</actions>
 	</page>
