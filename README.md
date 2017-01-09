@@ -13,41 +13,42 @@
 - 支持纯XML编写完成自动化测试功能
 - 自带Windows版本的driver驱动
 
-更加详细的文档介绍请访问W3C提供的<a href="http://www.w3cschool.cn/autotest/" target="_blank">http://www.w3cschool.cn/autotest/</a>
+更加详细的文档介绍请访问W3C提供的<a href="http://www.w3cschool.cn/autotest/" target="_blank">http://www.w3cschool.cn/autotest/</a>  
 
-<h1>远程的XSD地址</h1>
-- http://surenpi.com/schema/autotest/autotest.web.framework.xsd
-- http://surenpi.com/schema/datasource/autotest.web.framework.datasource.xsd
-- http://surenpi.com/schema/suite/autotest.web.framework.suite.xsd
-如果不知道如何配置Eclipse的XML智能提示，请访问下面的教程：
+## 示例
+从附件中下载到示例工程后，可以直接运行看到效果。  
+点击查看示例工程的[源码](https://git.oschina.net/surenpi/autotest.web.framework.demo "Demo")
+
+## 浏览器兼容性
+1. Chrome v53-55  
+2. IE  
+3. Firefox  
+
+## 开发环境  
+* JDK1.7+  
+* Maven
+* Eclipse4.4+
+
+更多详细内容请访问我的的[博客](http://surenpi.com/2016/07/18/autotest_web_framework_base_selenium/)  
+
+## 远程的XSD地址
+- http://surenpi.com/schema/autotest/autotest.web.framework.xsd  
+- http://surenpi.com/schema/datasource/autotest.web.framework.datasource.xsd  
+- http://surenpi.com/schema/suite/autotest.web.framework.suite.xsd  
+- 如果不知道如何配置Eclipse的XML智能提示，请访问下面的教程：
 http://surenpi.com/2016/07/21/eclipse_prompt_xml/
 
-本项目在码云和Github上都有托管，下面是各自的地址：
-Github  https://github.com/LinuxSuRen/autotest.web.framework
-码云    https://git.oschina.net/surenpi/autotest.web.framework
+本项目在码云和Github上都有托管，下面是各自的地址：  
+[Github](https://github.com/LinuxSuRen/autotest.web.framework "Autotest framework")  
+[码云](https://git.oschina.net/surenpi/autotest.web.framework "Autotest framework")  
 
-<h1>浏览器兼容性</h1>
-chrome v53-55
-ie
-firefox
+和本项目配套的Maven骨架工程源码位置如下：  
+[Github](https://github.com/LinuxSuRen/autotest.web.framework.archetype "Maven archetype")  
+[码云](https://github.com/LinuxSuRen/autotest.web.framework.archetype "Maven archetype")  
 
-从附件中下载到示例工程后，可以直接运行看到效果。
-示例工程的源码如下：
-https://git.oschina.net/surenpi/autotest.web.framework.demo
-
-<h1>环境</h1>
-JDK1.7，Maven
-
-更多详细内容请访问下面的博客：
-http://surenpi.com/2016/07/18/autotest_web_framework_base_selenium/
-
-和本项目配套的Maven骨架工程源码位置如下：
-Github  https://github.com/LinuxSuRen/autotest.web.framework.archetype
-码云    http://git.oschina.net/surenpi/autotest.web.framework.archetype
-
-和本项目配套的Eclipse插件工程源码位置如下：
-Github  https://github.com/LinuxSuRen/autotest.web.framework.plugin
-码云    http://git.oschina.net/surenpi/autotest.web.framework.plugin
+和本项目配套的Eclipse插件工程源码位置如下：  
+[Github](https://github.com/LinuxSuRen/autotest.web.framework.plugin )   
+[码云](http://git.oschina.net/surenpi/autotest.web.framework.plugin)  
 
 备注：
 由于本项目没有提交任何工程、IDE相关的文件（这样，您就可以任选Eclipse、IntelliJ IDEA或者是NetBeans作为您的开发工具了），所以check出来以后还需要一些步骤。
