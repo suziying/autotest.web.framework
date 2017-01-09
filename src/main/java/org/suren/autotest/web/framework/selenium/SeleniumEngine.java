@@ -29,6 +29,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.commons.io.IOUtils;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Platform;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.UnsupportedCommandException;
 import org.openqa.selenium.WebDriver;
@@ -285,9 +286,22 @@ public class SeleniumEngine
 	private void loadDefaultEnginePath(ClassLoader classLoader, Properties enginePro)
 	{
 //		String remoteHome = enginePro.getProperty("webdriver.remote.home", "http://surenpi.com/webdriver/");
-		
-		URL ieDriverURL = classLoader.getResource("IEDriverServer.exe");
-		URL chromeDrvierURL = classLoader.getResource("chromedriver.exe");
+		URL ieDriverURL = null,chromeDrvierURL = null;
+		// 实现对多个操作系统的兼容性设置
+		Platform current = Platform.getCurrent();
+		if(Platform.MAC.is(current))
+		{
+			chromeDrvierURL = classLoader.getResource("chromedriver");
+		}
+		else if (Platform.WINDOWS.is(current))
+		{
+			ieDriverURL = classLoader.getResource("IEDriverServer.exe");
+			chromeDrvierURL = classLoader.getResource("chromedriver.exe");
+		} else if (Platform.LINUX.is(current)) {
+			chromeDrvierURL = classLoader.getResource("chromedriver");
+		} else {
+			logger.error("Your platform is: [ " + Platform.getCurrent() + " ]" + " Unfortunately we doesn't support now.");
+		}
 		
 		enginePro.put("webdriver.ie.driver", getLocalFilePath(ieDriverURL));
 		enginePro.put("webdriver.chrome.driver", getLocalFilePath(chromeDrvierURL));
@@ -334,15 +348,6 @@ public class SeleniumEngine
 			{
 				logger.error("loading engine error.", e);
 			}
-		}
-		
-		// TODO 没有实现对多个操作系统的兼容性设置
-		String os = System.getProperty("os.name");
-		if(!"Linux".equals(os))
-		{
-		}
-		else
-		{
 		}
 	}
 	
